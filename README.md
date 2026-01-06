@@ -57,7 +57,7 @@ wall-app/
 5. Создайте базу данных: `wall_app_db`
 6. Выполните SQL-запросы для создания таблиц:
 
-```sql
+
 -- Таблица пользователей
 CREATE TABLE users (
     id INT PRIMARY KEY AUTO_INCREMENT,
@@ -75,7 +75,7 @@ CREATE TABLE messages (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 ); 
-```sql
+
 
 7. Откройте приложение: http://wall-app/
 
